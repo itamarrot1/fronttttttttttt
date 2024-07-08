@@ -68,7 +68,7 @@
     // Handle error (e.g., show error message to user)
 });
       </script>
-      <script>
+      <script> // display books function
         const display_books = () => {
     const token = localStorage.getItem('token');
 
@@ -206,6 +206,7 @@ const navigateToBookDetails = (id) => {
                 }
             }).then(response => {
                 console.log('Book returned successfully:', response.data);
+
                 // Optionally, update UI or perform other actions upon successful book return
             }).catch(error => {
                 console.error('Error returning book:', error);
@@ -223,10 +224,10 @@ const navigateToBookDetails = (id) => {
                 }
                 // Optionally, display an error message to the user
                 // Example: showSnackbar('Failed to return book. Please try again later.');
-                display_books()
+                display_books();
             });
         };
-
+       
     </script>
     <script> // search book function
 const navigate_by_search = () => {
