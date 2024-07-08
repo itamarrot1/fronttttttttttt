@@ -206,7 +206,7 @@ const navigateToBookDetails = (id) => {
                 }
             }).then(response => {
                 console.log('Book returned successfully:', response.data);
-
+                display_books();
                 // Optionally, update UI or perform other actions upon successful book return
             }).catch(error => {
                 console.error('Error returning book:', error);
@@ -224,7 +224,7 @@ const navigateToBookDetails = (id) => {
                 }
                 // Optionally, display an error message to the user
                 // Example: showSnackbar('Failed to return book. Please try again later.');
-                display_books();
+              
             });
         };
        
