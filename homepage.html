@@ -108,10 +108,21 @@
 
             const titleElement = document.createElement('h3');
             titleElement.textContent = book.title;
+            
+            
 
             const authorElement = document.createElement('p');
             authorElement.textContent = `Author: ${book.author}`;
-
+            
+            const bookTypeElement = document.createElement('p')
+            if (book.type == 3){
+                bookTypeElement.textContent = "Borrow for 10 days"
+            }
+            else if (book.type == 2){
+                bookTypeElement.textContent = "Borrow for 7 days"
+            }else if (book.type == 1){
+                bookTypeElement.textContent = "Borrow for 2 days"    
+            }
             const imgElement = document.createElement('img');
             imgElement.src = SERVER + `/media/${book.photo_path}`;
             imgElement.alt = `${book.title}'s Photo`;
