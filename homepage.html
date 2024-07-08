@@ -114,14 +114,14 @@
             const authorElement = document.createElement('p');
             authorElement.textContent = `Author: ${book.author}`;
             
-            const bookTypeElement = document.createElement('p')
+            const bookTypeElement = document.createElement('p');
             if (book.type == 3){
-                bookTypeElement.textContent = "Borrow for 10 days"
+                bookTypeElement.textContent = "Borrow for 10 days";
             }
             else if (book.type == 2){
-                bookTypeElement.textContent = "Borrow for 7 days"
+                bookTypeElement.textContent = "Borrow for 7 days";
             }else if (book.type == 1){
-                bookTypeElement.textContent = "Borrow for 2 days"    
+                bookTypeElement.textContent = "Borrow for 2 days";   
             }
             const imgElement = document.createElement('img');
             imgElement.src = SERVER + `/media/${book.photo_path}`;
@@ -163,7 +163,7 @@
             bookDiv.appendChild(titleElement);
             bookDiv.appendChild(authorElement);
             bookDiv.appendChild(imgElement);
-            bookDiv.appendChild(bookTypeElement)
+            bookDiv.appendChild(bookTypeElement);
             // Append bookDiv to bookContainer
             bookContainer.appendChild(bookDiv);
         });
