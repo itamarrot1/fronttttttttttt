@@ -35,7 +35,7 @@ button:hover{
 }
 
 .background-image {
-    background-image: url('/front/media/pexels-element5-1370295.jpg');
+    background-image: url(/front/pexels-element5-1370295.jpg);
     background-size: cover;
     background-position: center;
     /* Additional background properties can be added as needed */
